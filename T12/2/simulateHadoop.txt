@@ -1,0 +1,1 @@
+ echo places.db | python mapper.py | sort | python reducer.py > result.txt
