@@ -11,7 +11,8 @@ class CheltuileiServiceImp : CheltuieliService {
         val initialAgenda = arrayOf(
             Membru(1, "Dragos",  arrayOf(1500,1300,1200)),
             Membru(2, "Danut", arrayOf(1500,1900,2200)),
-            Membru(3, "Luminita",  arrayOf(400,2300,1250))
+            Membru(3, "Luminita",  arrayOf(400,2300,1250)),
+            Membru(4, "Mihai",  arrayOf(1400,2230,430))
         )
     }
 
@@ -40,9 +41,10 @@ class CheltuileiServiceImp : CheltuieliService {
 
     override fun searchAgenda( firstNameFilter: String): List<Membru> {
         return agenda.filter { it.value.firstName.toLowerCase().contains(
-                firstNameFilter,
-                ignoreCase = true
+                firstNameFilter.toLowerCase()
             )
-        }.map { it.value }.toList()
+        }
+        .map { it.value }
+        .toList()
     }
 }

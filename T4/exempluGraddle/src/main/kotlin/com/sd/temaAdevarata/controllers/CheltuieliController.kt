@@ -39,7 +39,7 @@ class CheltuieliController {
         } ?: return ResponseEntity(Unit, HttpStatus.NOT_FOUND)
     }
 
-    @RequestMapping(value=["/amount/{id}"], method=[RequestMethod.PUT])
+    @RequestMapping(value=["/amount/{id}"], method=[RequestMethod.PATCH])
     fun updateAmount(@PathVariable id: Int, @RequestBody amount: Array<Int>): ResponseEntity<Unit> {
         cheltuiliService.getPerson(id)?.let {
             cheltuiliService.updateAmount(it.id, amount)

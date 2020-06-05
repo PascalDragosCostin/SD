@@ -12,7 +12,7 @@ import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.*
 
 @Controller
-class WeatherAppController {
+class WeatherAppController2 {
     @Autowired
     private lateinit var locationSearchService: LocationSearchInterface
 
@@ -20,7 +20,7 @@ class WeatherAppController {
     private lateinit var weatherForecastService: WeatherForecastInterface
 
     @Autowired
-    private lateinit var chainedService: PrintInterface
+    private lateinit var printService: PrintInterface
 
     @RequestMapping("/getforecast/{location}/{html}", method = [RequestMethod.GET])
 //    @ResponseBody
@@ -32,14 +32,14 @@ class WeatherAppController {
             return ResponseEntity.ok("Nu s-au putut gasi date meteo pentru cuvintele cheie\"$location\"!")
         }
 
+        val rawForecastData: WeatherForecastData = weatherForecastService.getForecastData(locationId)
+
         return if(!html){
-            val rawForecastData: WeatherForecastData = weatherForecastService.getForecastData(locationId)
             ResponseEntity.ok(rawForecastData.toString())
         }else{
-            chainedService.setNextService(weatherForecastService)
             val headers = HttpHeaders()
             headers.contentType = MediaType.TEXT_HTML;
-            ResponseEntity.ok().headers(headers).body(chainedService.getHTML(locationId));
+            ResponseEntity.ok().headers(headers).body(printService.getHTML(rawForecastData));
         }
     }
 }

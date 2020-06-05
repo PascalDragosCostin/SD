@@ -1,5 +1,6 @@
 package com.sd.tema.pojo
 
+// aici avem si un constuctor
 data class WeatherForecastData (
     var location: String,
     var date: String,
