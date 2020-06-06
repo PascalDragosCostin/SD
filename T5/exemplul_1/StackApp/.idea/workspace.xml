@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37ff1c24-2ca6-4a72-84ec-a45efc692cd4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/exemplul_1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/StackApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sd/laborator/components/StackAppComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sd/laborator/components/StackAppComponent.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sd/laborator/services/OperationService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sd/laborator/services/OperationService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sd/laborator/services/SetGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sd/laborator/services/SetGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sd/laborator/components/StackAppComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sd/laborator/components/StackAppComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sd/laborator/services/SetGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sd/laborator/services/SetGenerator.class" afterDir="false" />
-    </list>
+    <list default="true" id="37ff1c24-2ca6-4a72-84ec-a45efc692cd4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +35,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../T11/eratostene-gradle" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -96,6 +85,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="562" y="169" width="788" height="828" key="#StackApp_[spring-boot:run]/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1583387375005" />
+    <state x="-860" y="57" key="FileChooserDialogImpl" timestamp="1591450904020">
+      <screen x="-1280" y="-190" width="1280" height="984" />
+    </state>
+    <state x="-860" y="57" key="FileChooserDialogImpl/0.0.1536.824/-1280.-190.1280.984@-1280.-190.1280.984" timestamp="1591450904020" />
     <state width="1237" height="217" key="GridCell.Tab.0.bottom" timestamp="1591449157245">
       <screen x="-1280" y="-190" width="1280" height="984" />
     </state>

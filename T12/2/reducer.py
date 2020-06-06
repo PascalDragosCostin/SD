@@ -7,7 +7,7 @@ def main():
     for line in sys.stdin:
         line = line.strip()
 
-        url, count = line.split()  # line.split('\t', 1)
+        url, count = line.split() 
 
         try:
             count = int(count)
