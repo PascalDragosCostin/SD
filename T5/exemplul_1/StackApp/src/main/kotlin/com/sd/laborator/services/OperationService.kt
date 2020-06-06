@@ -36,10 +36,10 @@ class OperationService: ChainOperation {
         val B = StackAppComponent.B
         if (A!!.data.count() == B!!.data.count()) {
             // (A x B) U (B x B)
-            val partialResult1 = cartesianProductOperation.executeOperation(A!!.data, B!!.data)
-            val partialResult2 = cartesianProductOperation.executeOperation(B!!.data, B!!.data)
+            val partialResult1 = cartesianProductOperation.executeOperation(A.data, B.data)
+            val partialResult2 = cartesianProductOperation.executeOperation(B.data, B.data)
             val result = unionOperation.executeOperation(partialResult1, partialResult2)
-            return "compute~" + "{\"A\": \"" + A?.data.toString() +"\", \"B\": \"" + B?.data.toString() + "\", \"result\": \"" + result.toString() + "\"}"
+            return "compute~" + "{\"A\": \"" + A.data.toString() +"\", \"B\": \"" + B.data.toString() + "\", \"result\": \"" + result.toString() + "\"}"
         }
         return "compute~" + "Error: A.count() != B.count()"
     }

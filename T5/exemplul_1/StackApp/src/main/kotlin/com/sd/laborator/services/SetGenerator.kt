@@ -20,11 +20,11 @@ class SetGenerator: ChainOperation {
         return when(cmd) {
             "regenerate_A" -> {
                 StackAppComponent.A = generateStack(20)
-                return "A~" +StackAppComponent.A?.data.toString()
+                return "A~" +StackAppComponent.A!!.data.toString()
             }
             "regenerate_B" -> {
                 StackAppComponent.B = generateStack(20)
-                return "B~" + StackAppComponent.B?.data.toString()
+                return "B~" + StackAppComponent.B!!.data.toString()
             }
             else -> nextService.execute(cmd)
         }
