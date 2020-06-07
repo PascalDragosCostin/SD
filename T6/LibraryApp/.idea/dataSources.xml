@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="library" uuid="14576d18-7436-45e1-a43a-35a6e2354877">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\CacheToBeStoredOnD\Fuckultate_An_III_Sem_II\SD - Sisteme Distribuite\Teme\SD_T6\LibraryApp\library.db</jdbc-url>
+    </data-source>
+  </component>
+</project>
